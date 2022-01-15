@@ -238,7 +238,7 @@ const CategoryStep = (props: {
   return (
     <>
       <Row className="call-to-action">
-        <h2>Create a new item</h2>
+        <h1>Create a new item</h1>
         <p>
           First time creating on Metaplex?{' '}
           <a href="#">Read our creators’ guide.</a>

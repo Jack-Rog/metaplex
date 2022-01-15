@@ -15,8 +15,11 @@ import { ConnectButton } from '@oyster/common';
 
 const getDefaultLinkActions = (connected: boolean) => {
   return [
-    <Link to={`/`} key={'explore'}>
-      <Button className="app-btn">Explore</Button>
+    <Link to={`/AboutUs`} key={'AboutUs'}>
+    <Button className="app-btn">About</Button>
+    </Link>,
+    <Link to={`/Ecuador`} key={'Ecuador'}>
+    <Button className="app-btn">Threatened Ecuador</Button>
     </Link>,
     <Link to={`/artworks`} key={'artwork'}>
       <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
@@ -50,7 +53,7 @@ const MetaplexMenu = () => {
     return (
       <>
         <Modal
-          title={<img src={'/metaplex-logo.svg'} />}
+          title={<img src={'/logo21.png'} />}
           visible={isModalVisible}
           footer={null}
           className={'modal-box'}
@@ -109,7 +112,7 @@ const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      <img src={'/logo21.png'} />
     </Link>
   );
 };

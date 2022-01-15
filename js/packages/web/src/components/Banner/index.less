@@ -22,7 +22,7 @@
 #current-banner {
   width: 100%;
   height: 520px;
-  background-color: @black-100;
+  background-color: #6D9051;
   background-position: top right;
   background-size: 924px 100%;
   background-repeat: no-repeat;
@@ -35,11 +35,18 @@
   #gradient-banner {
     position: absolute;
     height: 100%;
-    width: 462px;
-    right: 462px;
+    width: 100%;
+    right: 0;
     top: 0;
-    background: linear-gradient(270deg, rgba(18, 18, 18, 0) 0%, @black-100 100%);
+    border-radius: 36px;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
 
+    background: linear-gradient(270deg, #6D9051 0%, #38662a 100%);
+
+    
   }
   #banner-inner {
     position: absolute;
@@ -51,7 +58,7 @@
       margin-top: -5%;
       text-align: right;
       span{
-        background: rgba(255, 255, 255, 0.02);
+        background: #6D9051;
         border-radius: 36px;
         padding: 15px;
         margin-right: 5px;
@@ -69,6 +76,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 4vw;
+    color: white;
     max-width: 600px;
 
     #main-heading {
@@ -77,12 +85,14 @@
       line-height: 48px;
       letter-spacing: -0.02em;
       margin-bottom: 16px;
+      color: white;
     }
     #sub-heading {
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 32px;
+      color: white;
     }
   }
 }

@@ -54,7 +54,7 @@ export const Settings = ({
             </Tooltip>
 
             <Link
-              to={`/profile/${publicKey?.toBase58()}`}
+              to={`/artists/${publicKey?.toBase58()}`}
               style={{
                 color: 'rgba(255, 255, 255, 0.7)',
               }}

@@ -11,6 +11,8 @@ import {
   AuctionView,
   HomeView,
   StaticPageView,
+  AboutUsView,
+  EcuadorView,
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
@@ -40,6 +42,8 @@ export function Routes() {
             <Route exact path="/art/:id" component={() => <ArtView />} />
             <Route exact path="/artists/:id" component={() => <ArtistView />} />
             <Route exact path="/artists" component={() => <ArtistsView />} />
+            <Route exact path="/AboutUs" component={() => <AboutUsView />} />
+            <Route exact path="/Ecuador" component={() => <EcuadorView />} />
             <Route
               exact
               path="/auction/create/:step_param?"
